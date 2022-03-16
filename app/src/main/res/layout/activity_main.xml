@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/brand_tv"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/device_tv"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="device"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/board"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Board"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/model"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/display"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/fingerprint"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/hardware"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android id"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/installDate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+    <TextView
+        android:id="@+id/notification_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Notification"
+        android:visibility="visible">
+    </TextView>
+    </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="670dp"
+        android:layout_marginLeft="320dp"
+        android:backgroundTint="#08457E"
+        android:src="@drawable/chat360"
+        android:background="#ffffff"
+        />
+
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_anchorGravity="bottom|right|end" />-->
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/chat_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="4dp"
+     />-->
+
+
+
+    <!--   <LinearLayout
+        android:id="@+id/idLLMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+       >
+
+    <ImageButton
+        android:id="@+id/chatButton"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="2dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/circle"
+        android:src="@android:drawable/ic_menu_send"
+         />
+    </LinearLayout>-->
+    <!--<com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingButton_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="#08457E"
+        app:menu_animationDelayPerItem="55"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="#08457E"
+        app:menu_colorPressed="#08457E"
+        app:menu_colorRipple="#99d4d4d4"
+        app:menu_fab_size="mini"
+        app:menu_icon="@drawable/ic_chat_24"
+        app:menu_labels_colorPressed="#444"
+        app:menu_labels_colorRipple="#66efecec"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_textSize="15sp"
+        app:menu_openDirection="up"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="4dp"
+        app:menu_showShadow="true">
+        &lt;!&ndash;<com.github.clans.fab.FloatingActionButton
+            android:id="@+id/chat_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_24"
+            android:visibility="visible"
+            app:fab_colorNormal="#08457E"
+            app:fab_colorPressed="#08457E"
+            app:fab_label="chat"
+            app:fab_size="mini" />&ndash;&gt;
+    </com.github.clans.fab.FloatingActionMenu>
+-->
+
+</RelativeLayout>
