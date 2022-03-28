@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/Webview_Chatbot" vcs="Git" />
+=======
+>>>>>>> 7e23bcf2a3f32903f9d3a4682d524b5a92dcffa0
   </component>
 </project>
