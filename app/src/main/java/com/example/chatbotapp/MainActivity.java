@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
     public static final String brand = "Brand";
     SharedPreferences sharedpreferences;
 
-
-
     TextView android_id,android_info,installDate_tv,brand_tv,device_tv,board,model;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/admin/AndroidStudioProjects/ChatBotApp/Chatlibrary/src/main/res/layout/activity_chat.xml" value="0.16614583333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/ChatBotApp/Chatlibrary/src/main/res/drawable/exit_to_app.xml" value="0.13" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/ChatBotApp/Chatlibrary/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChatBotApp/Chatlibrary/src/main/res/layout/activity_notification.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/ChatBotApp/app/src/main/res/layout/activity_main.xml" value="0.1546875" />
       </map>

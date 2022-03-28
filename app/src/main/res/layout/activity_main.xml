@@ -107,20 +107,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Notification"
-        android:visibility="visible">
+        android:visibility="gone">
     </TextView>
     </LinearLayout>
     </ScrollView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="670dp"
         android:layout_marginLeft="320dp"
-        android:backgroundTint="#08457E"
-        android:src="@drawable/chat360"
+        android:layout_marginTop="670dp"
         android:background="#ffffff"
-        />
+        android:backgroundTint="#08457E"
+        android:src="@drawable/chat360" />
 
     <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/chat_fab"
