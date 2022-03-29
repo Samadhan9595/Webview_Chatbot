@@ -93,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
         editor.putString(model_name,devicemodel);
         editor.commit();
 
-
         //SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
         String model_id = (shared.getString(modal_id, ""));
         String channel=(shared.getString(model_name,""));
@@ -102,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
             editor.putString(model_id,androidId);
         }
         else {
-            Intent intent=new Intent(MainActivity.this,ChatActivity.class);
-            startActivity(intent);
+           // Intent intent=new Intent(MainActivity.this,ChatActivity.class);
+            //startActivity(intent);
         }
 
 
@@ -115,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, ChatActivity.class);
+                i.putExtra("data", "5d615be6-908b-4394-b4af-53b667aabc8f");
                 startActivity(i);
             }
         });

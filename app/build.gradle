@@ -18,7 +18,6 @@ android {
        // buildConfigField "String","BOT_KEY","\"apikey1\""
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false

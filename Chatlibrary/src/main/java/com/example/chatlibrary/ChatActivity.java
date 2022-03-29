@@ -3,9 +3,15 @@ package com.example.chatlibrary;
 import static android.content.ContentValues.TAG;
 import static com.example.chatlibrary.Constants.BOT_ID;
 
+import static java.security.AccessController.getContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebBackForwardList;
@@ -28,12 +34,23 @@ public class ChatActivity extends AppCompatActivity {
         fab=(FloatingActionButton)findViewById(R.id.fab);
         wv1.setWebViewClient(new MyBrowser());
         String abc=BuildConfig.LIBRARY_PACKAGE_NAME;
+        Intent intent = getIntent();
+        String Botid = intent.getStringExtra("data");
+        System.out.println("dependency pass data"+Botid);
+        //String intentdata = (getIntent().getStringExtra("data");
+        String androidId= Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
+        String devicemodel= Build.MODEL;
+        System.out.println("android Id Chat Activity"+androidId);
+        System.out.println("device model chat Activity"+devicemodel);
        // String apikey=BuildConfig.API_KEY;
        // String botkey=BuildConfig.BOT_KEY;
 
         //String url="https://www.google.com/";
        // String url= "https://app.gaadibaazar.in/page/?h=aef2f0fc-e635-4531-bea5-506d612f0f42";
-        String url=Constants.BASE_URL+BOT_ID;
+        //String deviceUrl=Constants.BASE_URL+androidId
+        String url=Constants.BASE_URL+Botid+"&"+"store_session=1"+"&"+"mobile=1"+"&"+"device_id="+androidId+"&"+"device_name="+devicemodel;
+        System.out.println("device details url"+url);
+
       //  String url=BuildConfig.API_KEY+BuildConfig.BOT_KEY;//apikey+botkey;
       //  System.out.println("url of gaddibazzar"+url);
         //String url=Constants.BASE_URL+botkey;
