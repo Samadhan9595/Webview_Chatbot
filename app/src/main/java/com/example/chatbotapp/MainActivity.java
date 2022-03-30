@@ -16,6 +16,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.example.chatlibrary.ChatActivity;
+import com.example.chatlibrary.FloatingButtonActivity;
 import com.example.chatlibrary.NotificationActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, ChatActivity.class);
+                Intent i = new Intent(MainActivity.this, FloatingButtonActivity.class);
                 i.putExtra("data", "5d615be6-908b-4394-b4af-53b667aabc8f");
                 startActivity(i);
             }
