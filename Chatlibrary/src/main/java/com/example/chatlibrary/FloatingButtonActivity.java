@@ -17,10 +17,13 @@ public class FloatingButtonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_floating_button);
 
         fab=(FloatingActionButton) findViewById(R.id.fab);
+        Intent intent = getIntent();
+        String Botid = intent.getStringExtra("data");
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(FloatingButtonActivity.this,ChatActivity.class);
+                intent.putExtra("data", Botid);
                 startActivity(intent);
             }
         });
