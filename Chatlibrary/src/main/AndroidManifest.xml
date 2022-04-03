@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".Example"
+            android:exported="false" />
+        <activity
             android:name=".FloatingButtonActivity"
             android:exported="false" />
         <activity

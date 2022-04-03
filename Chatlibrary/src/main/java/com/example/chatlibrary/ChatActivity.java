@@ -19,23 +19,25 @@ import android.webkit.WebHistoryItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ChatActivity extends AppCompatActivity {
 
     WebView wv1;
-    FloatingActionButton fab;
+    FloatingActionButton fab_chat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
         wv1=(WebView)findViewById(R.id.webView);
-        fab=(FloatingActionButton)findViewById(R.id.fab);
+        fab_chat=(FloatingActionButton)findViewById(R.id.fab_chat);
         wv1.setWebViewClient(new MyBrowser());
         String abc=BuildConfig.LIBRARY_PACKAGE_NAME;
         Intent intent = getIntent();
         String Botid = intent.getStringExtra("data");
+        Toast.makeText(this, "bot id"+Botid, Toast.LENGTH_SHORT).show();
         System.out.println("dependency pass data"+Botid);
         //String intentdata = (getIntent().getStringExtra("data");
         String androidId= Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
@@ -80,7 +82,7 @@ public class ChatActivity extends AppCompatActivity {
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        fab_chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //wv1.destroy();

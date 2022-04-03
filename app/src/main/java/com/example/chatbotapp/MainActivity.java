@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         String myapikey=BuildConfig.API_KEY;
         System.out.println(myapikey);
         //String myApiKey = BuildConfig.;
+        //FloatingActionButton fab=(FloatingActionButton)findViewById(com.example.chatlibrary.R.id.fab_floatact);
         FloatingActionButton fab = findViewById(R.id.fab);
         TextView notification_tv=findViewById(R.id.notification_tv);
 
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FloatingButtonActivity.class);
+                Intent i = new Intent(MainActivity.this, ChatActivity.class);
                 i.putExtra("data", "5d615be6-908b-4394-b4af-53b667aabc8f");
                 startActivity(i);
             }

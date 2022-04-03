@@ -10,22 +10,27 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FloatingButtonActivity extends AppCompatActivity {
 
-    FloatingActionButton fab;
+     public FloatingActionButton fab_floatact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_floating_button);
 
-        fab=(FloatingActionButton) findViewById(R.id.fab);
+        fab_floatact=(FloatingActionButton) findViewById(R.id.fab);
         Intent intent = getIntent();
         String Botid = intent.getStringExtra("data");
-        fab.setOnClickListener(new View.OnClickListener() {
+        fab_floatact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(FloatingButtonActivity.this,ChatActivity.class);
                 intent.putExtra("data", Botid);
                 startActivity(intent);
+
             }
         });
+
+        /*private void OpenPage(View v){
+
+        }*/
     }
 }
