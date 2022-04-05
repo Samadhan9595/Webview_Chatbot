@@ -37,7 +37,6 @@ public class ChatActivity extends AppCompatActivity {
         String abc=BuildConfig.LIBRARY_PACKAGE_NAME;
         Intent intent = getIntent();
         String Botid = intent.getStringExtra("data");
-        Toast.makeText(this, "bot id"+Botid, Toast.LENGTH_SHORT).show();
         System.out.println("dependency pass data"+Botid);
         //String intentdata = (getIntent().getStringExtra("data");
         String androidId= Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);

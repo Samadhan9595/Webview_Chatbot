@@ -43,8 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         String myapikey=BuildConfig.API_KEY;
         System.out.println(myapikey);
-        //String myApiKey = BuildConfig.;
-        //FloatingActionButton fab=(FloatingActionButton)findViewById(com.example.chatlibrary.R.id.fab_floatact);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         TextView notification_tv=findViewById(R.id.notification_tv);
 
@@ -58,10 +57,7 @@ public class MainActivity extends AppCompatActivity {
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         String androidId= Settings.Secure.getString(getContentResolver(),Settings.Secure.ANDROID_ID);
-        //android_id.setText("Model Id"+androidId);
-        //String android_id=androidId;
-        //chat_fab=(FloatingActionButton) findViewById(R.id.chat_fab);
-        //floatingButton_fb=(FloatingActionMenu)findViewById(R.id.floatingButton_fb);
+
 
         // WebView browser = (WebView) findViewById(R.id.webview);
         PackageManager pm = getApplicationContext().getPackageManager();
@@ -81,12 +77,7 @@ public class MainActivity extends AppCompatActivity {
         DateFormat simple = new SimpleDateFormat("dd MMM yyyy HH:mm:ss:SSS Z");
         Date result = new Date(ver);
 
-      /*  installDate_tv.setText("" +simple.format(result));
-        android_info.setText("PRODUCT:"+ Build.PRODUCT+"\n");
-        brand_tv.setText("BRAND:"+Build.BRAND);
-        device_tv.setText("Device:"+Build.DEVICE);
-        board.setText("board"+Build.BOARD);
-        model.setText("model"+Build.MODEL);*/
+
         String devicemodel=Build.MODEL;
         String abc="DEVICE"+Build.DEVICE;
         SharedPreferences shared = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
